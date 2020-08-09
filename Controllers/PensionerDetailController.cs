@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace MFRP_Pension_Detail.Controllers
 {
@@ -65,10 +63,10 @@ namespace MFRP_Pension_Detail.Controllers
             }
             catch (NullReferenceException e)
             {
-                _log4net.Error("Values cannot be fetched from the Csv file"+e);
+                _log4net.Error("Values cannot be fetched from the Csv file" + e);
                 return null;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 _log4net.Error("Values cannot be fetched from the Csv file" + e);
                 return null;

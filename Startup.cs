@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoWrapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -44,7 +38,7 @@ namespace MFRP_Pension_Detail
                 app.UseDeveloperExceptionPage();
             }
 
-            loggerFactory.AddLog4Net(); 
+            loggerFactory.AddLog4Net();
 
             app.UseHttpsRedirection();
 

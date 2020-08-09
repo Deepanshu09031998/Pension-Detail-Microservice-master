@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MFRP_Pension_Detail
 {
@@ -11,7 +8,7 @@ namespace MFRP_Pension_Detail
     public class PensionerDetail
     {
         public string Name { get; set; }
-        public DateTime Dateofbirth{get; set; }
+        public DateTime Dateofbirth { get; set; }
         public string Pan { get; set; }
         public int SalaryEarned { get; set; }
         public int Allowances { get; set; }
@@ -26,14 +23,14 @@ namespace MFRP_Pension_Detail
 
     public enum PensionTypeValue
     {
-        Self=1,
-        Family=2
+        Self = 1,
+        Family = 2
     }
     public enum BankType
     {
-        Public=1,
-        Private=2
+        Public = 1,
+        Private = 2
     }
 
-    
+
 }
